@@ -34,6 +34,7 @@ function subTotal() {
     const grandTotal = totalPrice + tax;
     document.getElementById('grand-total').innerText = '$' + grandTotal;
 };
+
 // Input value 
 function getInputValue(ticket) {
     const ticketInput = document.getElementById(ticket + '-count');
