@@ -1,4 +1,4 @@
-// HandleTicketChange functuon && Calculate
+// HandleTicketChange functuon && Calculate//
 function handleTicketChange(ticket, isIncrease) {
     const ticketInput = document.getElementById(ticket + '-count');
     const ticketCount = parseInt(ticketInput.value);
@@ -21,7 +21,7 @@ function handleTicketChange(ticket, isIncrease) {
     subTotal();
 };
 
-// SubTotal & Total Calculate function
+// SubTotal & Total Calculate function//
 function subTotal() {
     const firstCount = getInputValue('first');
     const economyCount = getInputValue('economy');
@@ -35,14 +35,14 @@ function subTotal() {
     document.getElementById('grand-total').innerText = '$' + grandTotal;
 };
 
-// Input value 
+// Input value //
 function getInputValue(ticket) {
     const ticketInput = document.getElementById(ticket + '-count');
     const ticketCount = parseInt(ticketInput.value);
     return ticketCount;
 };
 
-//book NowButton
+//book NowButton//
 const bookNowBtn = document.getElementById('book-now');
 bookNowBtn.addEventListener('click', function () {
     console.log(bookNowBtn);
